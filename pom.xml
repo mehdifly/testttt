@@ -5,7 +5,7 @@
   <groupId>Testmaven</groupId>
   <artifactId>Testmaven2</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
 
   <name>Testmaven2</name>
   <url>http://maven.apache.org</url>
@@ -30,11 +30,9 @@
            
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.2</version>
-                        <configuration>
-          <webappDirectory>/sample/servlet/container/deploy/directory</webappDirectory>
-        </configuration>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                
 	 
             </plugin>
             
